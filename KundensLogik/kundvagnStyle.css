@@ -1,0 +1,304 @@
+/* Grundläggande stilar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    
+}
+
+/*-----------------------header -----------***/
+
+.flytta {
+    margin-top: 220px;
+    }
+    
+    /* Dropdown Button */
+    .dropbtn {
+    background-color: #d6f0ff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    }
+    
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(117, 172, 250, 0.417);
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 3;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {display:block;}
+    
+    
+    /* Stil för header */
+    /* Header styling */
+    header {
+    position: fixed;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+    background-color: #f8f9fa; /* Ljus bakgrundsfärg */
+    border-bottom-style: inset, 5px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    }
+    
+    header div {
+    display: flex;
+    align-items: center;
+    }
+    
+    
+    header img {
+    width: 75px;
+    margin-right: 300px;
+    }
+    
+    
+    header span {
+    font-weight: bold;
+    font-size: 35px;
+    }
+
+
+
+/* Styling för kundvagnen */
+.beställningar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.beställningar div {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling för bilder */
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Styling för formulärkomponenter */
+label, input, button {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"],
+input[type="text"] {
+    padding: 8px;
+    width: calc(100% - 16px);
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Styling för knappar */
+button {
+    padding: 10px 15px;
+    background-color: silver;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+
+
+/* Allmän styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Formulär styling */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Styling för framgångsrik köpmeddelande */
+#success_buy {
+    margin-top: 20px;
+    padding: 50px;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    color:navy;
+    border-radius: 4px;
+    text-align: center; /* Centrera text */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+/* Parfym-container styling */
+#parfym-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #666;
+}
+
+
+
+.frakt_betal {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.frakt {
+    font-size: 20px;
+    font-style: italic;
+    flex: 50%;
+    align-items: center;
+    text-align: center;
+}
+    
+.betal {
+    font-size: 20px;
+    font-style: italic;
+    flex: 50%;
+    align-items: center;
+    text-align: center;
+}
+    
+.follow_about {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.follow {
+    font-size: 14px;
+    font-style: italic;
+    flex: 33%;
+    align-items: center;
+    text-align: center;
+}
+    
+.about {
+    font-size: 14px;
+    font-style: italic;
+    flex: 33%;
+    align-items: center;
+    text-align: center;
+}
+    
+.kont {
+    font-size: 14px;
+    font-style: italic;
+    flex: 33%;
+    align-items: center;
+    text-align: center;
+}
+    
+.logoslut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

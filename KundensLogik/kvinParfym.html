@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women parfym</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="parfymStyle.css">
+    
+</head>
+
+<body>
+
+    <div class="flytta">
+    <header>
+        <div class="header-row">
+        
+    
+            <div class="header-content">
+    <div>
+        <a href="../index.html"><img src="../logo1.png" style="height: wrap; width: 50%;" alt="Parfume Paradise"></a>
+    </div>
+    </div>
+    <div class="kundvagnIkon">
+    <a href="kundvagn.html">
+    <img src="/kundvagn.png" alt="kundvagn" style="width: 40px;">
+    </a>
+    <span id="counter">0</span>
+    </div>
+    
+    <div class="dropdown">
+        <button onclick="myFunctionMenu()" class="dropbtn">  Menu     <i class="fas fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/index.html"> Home </a>
+          <a href="mänParfym.html"> Men </a>
+          <a href="kvinParfym.html"> Women </a>
+          <a href="/omoss.html"> About us </a>
+        </div>
+    </div> 
+    
+    
+    </div>
+    
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Welcome to our women's perfume shop!</h2>
+            <p>Explore our range of exclusive women's fragrances at unbeatable prices.
+                From robust and masculine fragrances with hints of wood and spice to refreshing and elegant scents with citrus and sea notes, 
+                we have something for every women. Upgrade your personal style with our high-quality women's fragrances at affordable prices!</p>
+        </section>
+    </main>
+
+    <div class="follow_about">
+       
+        <div class="about">
+        <h5 style="font-size: 20px;">About</h5>
+        <a href="/omoss.html" style="color: black;"><p>About us</p></a>
+        <a href="/shipping.html" style="color: black;"><p>Shipping information</p></a>
+        <a href="/privacy.html" style="color: black;"><p>Privacy Policy</p></a>
+        <a href="https://www.facebook.com/" style="color: black;"><p>Q&A</p></a>
+        </div>
+        
+        <div class="kont">
+        <h5 style="font-size: 20px;">Contact</h5>
+        <p><strong>Address:</strong>Gustava Melins gata 2, 461 32 Trollhättan</p>
+        <p><strong>Phone:</strong> 08 702 00 90</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Fri </p>
+        <p><strong>Email:</strong> Parfumeparadise@info.com</p>
+        </div>
+        
+        <div class="follow"> 
+        <h5 style="font-size: 20px;">Follow Us</h5>
+        <a href="https://www.facebook.com/"><img src="/facebook.png" style="margin: 5px; width: 40px; height: 40px;"></a>
+        <a href="https://www.instagram.com/"><img src="/instagram.png" style="margin: 5px; width: 40px; height: 40px;"></a>
+        <a href="https://www.pinterest.se/"><img src="/pintrest.png" style="width: 45px; height: 45px;"></a>
+        </div>
+        
+        </div>
+        
+        <div class="frakt_betal">
+        
+        <div class="frakt">
+        <h4>Shipping</h4>
+     <img src="/PostNord.png" style="height: 40px; width: 80px;" alt="PostNord">
+        <img src="/instabox.png" style="height: 40px; width: 80px;" alt="Instabox">
+     <img src="/DHL.jpg" style="height: 40px; width: 80px;" alt="DHL">
+     </div>
+     
+        <div class="betal">
+        <h4>Secure payment</h4>
+        <img src="/swish.png" style="height: 40px; width: 80px;" alt="Swish">
+        <img src="/klarna.png" style="height: 40px; width: 80px;" alt="klarna">
+        <img src="/visa.png" style="height: 40px; width: 80px;" alt="VISA">
+        <img src="/mastercard.png" style="height: 40px; width: 80px;" alt="MasterCard">
+     
+        </div>
+     
+        </div>
+     
+        <br>
+        <br>
+        <div class="logoslut">
+        <img src="/logo2.png" style="height: 100%; width: 40%;" alt="Parfume Paradise">
+        </div>
+        <p style="text-align: center;">© 2024, Perfume Paradise. All rights reserved.</p>
+
+    
+        <script>
+          /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+          function myFunctionMenu() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+          
+          // Get the navbar
+          var navbar = document.getElementById("header");
+          
+          // Get the offset position of the navbar
+          var sticky = navbar.offsetTop;
+          
+          // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          </script>
+
+<script src="kvinParfym.js"></script>
+    </div>
+</body>
+</html>

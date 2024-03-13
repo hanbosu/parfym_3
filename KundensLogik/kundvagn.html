@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundvagn</title>
+    <link rel="stylesheet" href="kundvagnStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-row">
+        
+    
+            <div class="header-content">
+    <div>
+      <a href="/index.html"><img src="/logo1.png" style="height: wrap; width: 40%;" alt="Parfume Paradise"></a>
+    </div>
+
+    <div class="dropdown">
+        <button onclick="myFunctionMenu()" class="dropbtn">  Menu     <i class="fas fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/index.html"> Home </a>
+          <a href="/KundensLogik/mänParfym.html"> Men </a>
+          <a href="/KundensLogik/kvinParfym.html"> Women </a>
+          <a href="/omoss.html"> About us </a>
+        </div>
+    </div> 
+    
+    
+    </div>
+    </div>
+</header>
+    
+<div class="flytta">
+<div class="beställningar">
+
+</div>
+
+
+<!-- <form id="orderForm">
+    <label for="firstName">För och Efternamn:</label>
+    <input type="text" id="firstName" name="firstName" required><br><br>
+
+    <label for="personalNumber">Personnummer:</label>
+    <input type="number" id="personalNumber" name="personalNumber" required><br><br>
+
+    <label for="phoneNumber">Telefonnummer:</label>
+    <input type="number" id="phoneNumber" name="phoneNumber" required><br><br>
+
+    <label for="bankAccount">Bankkonto:</label>
+    <input type="number" id="bankAccount" name="bankAccount" required><br><br>
+</form> -->
+
+<button id="OKButton">Slutföra köp</button>
+
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const kundvagn = JSON.parse(localStorage.getItem("kundvagn")) || [];
+        if (kundvagn.length === 0) {
+            document.getElementById("orderForm").style.display = "none";
+            document.getElementById("OKButton").style.display= "none";
+        }
+    });  
+</script> -->
+
+
+
+<div id="parfym-container"></div>
+<div id="success_buy"></div>
+
+
+
+
+<script src="kundvagn.js"></script>
+
+
+    <br>
+    <br>
+    <div class="logoslut">
+    <img src="/logo2.png" style="height: 100%; width: 40%;" alt="Parfume Paradise">
+    </div>
+    <p style="text-align: center;">© 2024, Perfume Paradise. All rights reserved.</p>
+
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunctionMenu() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+        
+        // Get the navbar
+        var navbar = document.getElementById("header");
+        
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+
+</div>
+</body>
+</html>

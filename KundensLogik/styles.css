@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+.flytta {
+margin-top: 170px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+background-color: #d6f0ff;
+color: black;
+padding: 16px;
+font-size: 16px;
+font-weight: bold;
+border: none;
+cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+background-color: rgba(117, 172, 250, 0.417);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 3;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+z-index: 3;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/* Stil för header */
+/* Header styling */
+header {
+position: fixed;
+overflow: visible;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+padding-top: 0;
+background-color: #f8f9fa; /* Ljus bakgrundsfärg */
+border-bottom-style: inset, 5px;
+width: 100%;
+top: 0;
+z-index: 1;
+}
+
+header div {
+display: flex;
+align-items: center;
+}
+
+
+header img {
+width: 75px;
+margin-right: 300px;
+}
+
+
+header span {
+font-weight: bold;
+font-size: 35px;
+}
+
+
+/* Styling för sökformuläret */
+/* Centrera sökformuläret */
+#searchForm {
+display: flex;
+align-items: right;
+justify-content: right; /* Centrerar horisontellt */
+}
+
+
+#searchForm label {
+margin-right: 10px;
+}
+
+
+#searchInput {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px; /* Runda kanter */
+}
+
+
+#searchInput:focus {
+outline: none;
+border-color: #555; /* Mörkgrå färg vid fokus */
+}
+
+
+#searchForm button {
+padding: 8px 16px;
+background-color: rgb(170, 211, 250); /* Blå färg för knappen */
+color: #fff; /* Vit textfärg */
+border: none;
+border-radius: 5px; /* Runda kanter */
+cursor: pointer;
+transition: background-color 0.3s ease; /* Smidig övergång vid hover */
+}
+
+
+#searchForm button:hover {
+    background-color: #114ea8; /* Lite mörkare grå när du hovrar över */
+    color: #fff; /* Vit text när du hovrar över */
+}
+
+
+
+
+#searchResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrera bilderna horisontellt */
+    align-items: center; /* Centrera bilderna vertikalt */
+}
+
+.styleParfymBild {
+    width: calc(20% - 10px);
+    margin-bottom: 45px;
+}
+
+.styleParfymBild img {
+    max-width: 300px;
+    max-height: 250px;
+    width: 200px;
+    height: 180px;
+    display: block;
+    margin: 20px auto; /* Auto margin horizontally centers the images */
+}
+
+
+
+/* Stilar för knappen */
+.styleParfymButton {
+    background-color: #acd4fc; 
+    border: 2px solid #2f3f40; 
+
+    /* Textfärg */
+    color: #000; /* Svart text */
+
+    /* Storlek på knappen */
+    padding: 5px 10px; /* Justera kudden för att passa */
+
+    /* Formatering */
+    border-radius: 5px; /* Runda kanter */
+
+    /* Centrerar texten */
+    text-align: center;
+
+    /* Cursor-stil */
+    cursor: pointer;
+
+    /* Ingen understrykning för länkliknande knappar */
+    text-decoration: none;
+
+    /* Hovringseffekt */
+    transition: background-color 0.3s, color 0.3s;
+    
+    /* Centrerar knappen horisontellt */
+    margin: auto;
+    display: block;
+}
+
+/* Hovringseffekt för knappen */
+.styleParfymButton:hover {
+    background-color: #114ea8; /* Lite mörkare grå när du hovrar över */
+    color: #fff; /* Vit text när du hovrar över */
+}
+
+
+/* Stilar för beskrivning */
+.styleParfymBild figcaption {
+    text-align: center;
+    font-size:15px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* Styla kundvagnsikon */
+.kundvagnIkon {
+    position: relative; /* Tillåter oss att positionera siffran relativt till korgen */
+    }
+    
+    
+.kundvagnIkon img {
+    width: 40px;
+    margin-right: 5px; /* Minskar marginalen mellan ikonen och räknaren */
+}
+    
+    
+    
+#counter {
+    background-color: gray; /* Grå färg för räknaren */
+    color: #fff; /* Vit textfärg */
+    border-radius: 50%; /* Runda kanter */
+    padding: 4px 6px; /* Minskar padding för mindre storlek */
+    font-size: 16px; /* Minskar textstorlek för mindre storlek */
+    position: absolute; /* Absolut positionering för att flytta siffran relativt till korgen */
+    top: -2px; /* Justera vertikal position uppåt */
+    left: -15px; /* Justera horisontell position till vänster */
+}
+
+
+img {
+width: 100%; /* Fyller hela bredden av förälderns bredd */
+max-width: 800px; /* Maximal bredd för bilden */
+height: auto; /* Behåller bildens proportioner */
+}
+
+
+span {
+font-size: 2.5em; /* Justerar storleken på span-texten */
+font-weight: bold; /* Gör texten fet */
+}
+
+
+.service {
+top: 0;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+/*flex-direction: row;*/
+}
+
+.frakt_betal {
+display: flex;
+flex-wrap: wrap;
+}
+
+.frakt {
+font-size: 20px;
+font-style: italic;
+flex: 50%;
+align-items: center;
+text-align: center;
+}
+
+.betal {
+font-size: 20px;
+font-style: italic;
+flex: 50%;
+align-items: center;
+text-align: center;
+}
+
+.follow_about {
+display: flex;
+flex-wrap: wrap;
+}
+
+.follow {
+font-size: 14px;
+font-style: italic;
+flex: 33%;
+align-items: center;
+text-align: center;
+}
+
+.about {
+font-size: 14px;
+font-style: italic;
+flex: 33%;
+align-items: center;
+text-align: center;
+}
+
+.kont {
+font-size: 14px;
+font-style: italic;
+flex: 33%;
+align-items: center;
+text-align: center;
+}
+
+.logoslut {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*--------------------------------------------------------------*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.left {
+flex: 20%;
+align-items: center;
+text-align: left;
+background-color: #c7eeff;
+height: fit-content;
+
+}
+
+.right {
+flex: 65%;
+align-items: center;
+text-align: center;
+
+}
+
+
+
+p {
+    font-family: Arial, sans-serif; /* Ändra font om så önskas */
+    line-height: 1.6; /* Ändra radhöjd efter behov */
+    color: #333; /* Ändra färg efter behov */
+}
+  
+
+/*-----------------------------------------------------------------------------*/
+
+.shipping {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+height: fit-content;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+overflow: visible;
+}
+
+.privacy {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
+}
+
+.privacy object {
+width: 80%; 
+max-height: 100%; 
+}

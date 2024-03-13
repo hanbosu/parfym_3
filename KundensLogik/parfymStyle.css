@@ -1,0 +1,310 @@
+.kundvagnIkon {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.styleParfymBild img {
+    max-width: 300px;
+    max-height: 250px;
+    width: 200px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 3.0em;
+}
+
+section p {
+    text-align: center;
+    color: silver;
+}
+
+/* CSS för varje figure-element */
+.styleParfymBild {
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+}
+
+/* Stilar för knappen */
+.styleParfymButton {
+    background-color: #acd4fc; 
+    border: 2px solid #2f3f40; 
+
+    /* Textfärg */
+    color: #000; /* Svart text */
+
+    /* Storlek på knappen */
+    padding: 5px 10px; /* Justera kudden för att passa */
+
+    /* Formatering */
+    border-radius: 5px; /* Runda kanter */
+
+    /* Centrerar texten */
+    text-align: center;
+
+    /* Cursor-stil */
+    cursor: pointer;
+
+    /* Ingen understrykning för länkliknande knappar */
+    text-decoration: none;
+
+    /* Hovringseffekt */
+    transition: background-color 0.3s, color 0.3s;
+    
+    /* Placering bredvid varandra */
+    margin-right: 10px; /* Avstånd mellan knapparna */
+}
+
+/* Hovringseffekt för knappen */
+.styleParfymButton:hover {
+    background-color: #114ea8; /* Lite mörkare grå när du hovrar över */
+    color: #fff; /* Vit text när du hovrar över */
+}
+
+/* Stilar för beskrivning */
+.styleParfymBild figcaption {
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Stilar för pris */
+.styleParfymBild .price {
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Stilar för parfymens namn */
+.styleParfymBild h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.primary {
+    background-color: silver;
+    color: black;
+}
+
+.primary:hover {
+    background-color: gray;
+}
+
+/* CSS för varje figure-element */
+.styleParfymBild {
+    width: calc(25% - 10px);
+    margin-bottom: 30px; /* Ökat avstånd mellan parfymer */
+}
+
+
+/*-------------------------------------------*/
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #d6f0ff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /* Anpassa bredden efter innehållet */
+    width: auto;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(117, 172, 250, 0.417);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    /* Anpassa bredden efter innehållet */
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+    
+    
+    /* Stil för header */
+    /* Header styling */
+header {
+    position: fixed;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+    background-color: #f8f9fa; /* Ljus bakgrundsfärg */
+    border-bottom-style: inset, 5px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+    
+header div {
+    display: flex;
+    align-items: center;
+}    
+    
+    
+header img {
+    width: 75px;
+    margin-right: 300px;
+}    
+    
+    
+header span {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.flytta {
+        margin-top: 240px;
+}
+        
+/* Styla kundvagnsikon */
+.kundvagnIkon {
+    position: relative; /* Tillåter oss att positionera siffran relativt till korgen */
+    }
+    
+    
+.kundvagnIkon img {
+    width: 40px;
+    margin-right: 5px; /* Minskar marginalen mellan ikonen och räknaren */
+}
+    
+    
+    /* Styla räknaren */
+#counter {
+    background-color: gray; /* Grå färg för räknaren */
+    color: #fff; /* Vit textfärg */
+    border-radius: 50%; /* Runda kanter */
+    padding: 4px 6px; /* Minskar padding för mindre storlek */
+    font-size: 12px; /* Minskar textstorlek för mindre storlek */
+    position: absolute; /* Absolut positionering för att flytta siffran relativt till korgen */
+    top: 4px; /* Justera vertikal position uppåt */
+    left: -15px; /* Justera horisontell position till vänster */
+}
+    
+
+    
+.service {
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /*flex-direction: row;*/
+}
+    
+.frakt_betal {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.frakt {
+    font-size: 20px;
+    font-style: italic;
+    flex: 50%;
+    align-items: center;
+    text-align: center;
+}
+    
+.betal {
+    font-size: 20px;
+    font-style: italic;
+    flex: 50%;
+    align-items: center;
+    text-align: center;
+}
+    
+.follow_about {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.follow {
+    font-size: 14px;
+    font-style: italic;
+    flex: 33%;
+    align-items: center;
+    text-align: center;
+}
+    
+.about {
+    font-size: 14px;
+    font-style: italic;
+    flex: 33%;
+    align-items: center;
+    text-align: center;
+}
+    
+.kont {
+    font-size: 14px;
+    font-style: italic;
+    flex: 33%;
+    align-items: center;
+    text-align: center;
+}
+    
+.logoslut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
